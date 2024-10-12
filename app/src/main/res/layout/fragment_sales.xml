@@ -30,7 +30,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:hint="Search Here"
-            android:boxStrokeColor="@color/black"
             android:layout_height="60dp"
             android:id="@+id/search">
 

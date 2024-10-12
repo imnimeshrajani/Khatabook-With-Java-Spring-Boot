@@ -1,4 +1,4 @@
-package com.example.khatabook.adapter;
+package com.example.khatabook.parties.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -6,10 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.khatabook.fragment.CustomersFragment;
 import com.example.khatabook.fragment.ProductFragment;
 import com.example.khatabook.fragment.ServiceFragment;
-import com.example.khatabook.fragment.SuppliersFragment;
 
 public class ItemsPagerAdapter extends FragmentStateAdapter {
     public ItemsPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
