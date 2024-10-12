@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.khatabook.R;
-import com.example.khatabook.adapter.BillSectionPagerAdapter;
-import com.example.khatabook.adapter.SectionsPagerAdapter;
+
+import com.example.khatabook.bill.adapter.BillSectionPagerAdapter;
 import com.example.khatabook.databinding.FragmentBillBinding;
 import com.example.khatabook.databinding.FragmentPartiesBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
