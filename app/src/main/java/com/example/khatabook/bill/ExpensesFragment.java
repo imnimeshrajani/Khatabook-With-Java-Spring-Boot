@@ -1,4 +1,4 @@
-package com.example.khatabook.fragment;
+package com.example.khatabook.bill;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,14 +9,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.khatabook.R;
 
-public class PurchasesFragment extends Fragment {
+public class ExpensesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_purchases, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_expenses, container, false);
         return view;
     }
 }

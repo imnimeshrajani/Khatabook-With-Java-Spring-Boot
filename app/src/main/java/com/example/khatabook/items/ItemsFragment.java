@@ -1,40 +1,40 @@
-package com.example.khatabook.fragment;
+package com.example.khatabook.items;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.khatabook.R;
+import com.example.khatabook.adapter.ItemsPagerAdapter;
 import com.example.khatabook.adapter.SectionsPagerAdapter;
+import com.example.khatabook.databinding.FragmentItemsBinding;
 import com.example.khatabook.databinding.FragmentPartiesBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-public class PartiesFragment extends Fragment {
-
-    private FragmentPartiesBinding binding;
+public class ItemsFragment extends Fragment {
+    FragmentItemsBinding binding;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentPartiesBinding.inflate(inflater, container, false);
+        binding = FragmentItemsBinding.inflate(inflater, container, false);
 
-        SectionsPagerAdapter adapter = new SectionsPagerAdapter(getChildFragmentManager(), getLifecycle());
-        binding.viewPager.setAdapter(adapter);
+        ItemsPagerAdapter adapter = new ItemsPagerAdapter(getChildFragmentManager(), getLifecycle());
+        binding.viewPagerItems.setAdapter(adapter);
 
         // Link TabLayout and ViewPager2
-        new TabLayoutMediator(binding.tabLayout, binding.viewPager,
+        new TabLayoutMediator(binding.tabLayoutItems, binding.viewPagerItems,
                 (tab, position) -> {
                     switch (position) {
                         case 0:
-                            tab.setText("CUSTOMERS");
+                            tab.setText("PRODUCTS");
                             break;
                         case 1:
-                            tab.setText("SUPPLIERS");
+                            tab.setText("SERVICES");
                             break;
                     }
                 }).attach();
