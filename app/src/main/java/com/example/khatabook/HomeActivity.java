@@ -10,12 +10,12 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.khatabook.databinding.ActivityHomeBinding;
-import com.example.khatabook.fragment.PartiesFragment;
+import com.example.khatabook.parties.PartiesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.example.khatabook.fragment.BillFragment;
-import com.example.khatabook.fragment.ItemsFragment;
-import com.example.khatabook.fragment.MoreFragment;
+import com.example.khatabook.bill.BillFragment;
+import com.example.khatabook.items.ItemsFragment;
+import com.example.khatabook.more.MoreFragment;
 
 public class HomeActivity extends AppCompatActivity {
 

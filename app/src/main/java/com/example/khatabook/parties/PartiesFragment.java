@@ -1,4 +1,4 @@
-package com.example.khatabook.fragment;
+package com.example.khatabook.parties;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.khatabook.adapter.PartiesPagerAdapter;
+import com.example.khatabook.parties.adapter.PartiesPagerAdapter;
 import com.example.khatabook.databinding.FragmentPartiesBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
 
