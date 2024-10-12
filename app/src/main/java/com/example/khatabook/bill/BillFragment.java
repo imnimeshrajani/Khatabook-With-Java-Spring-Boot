@@ -1,4 +1,4 @@
-package com.example.khatabook.fragment;
+package com.example.khatabook.bill;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.example.khatabook.fragment;
+package com.example.khatabook.parties;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,8 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.khatabook.R;
-import com.example.khatabook.adapter.SectionsPagerAdapter;
+import com.example.khatabook.parties.adapter.PartiesPagerAdapter;
 import com.example.khatabook.databinding.FragmentPartiesBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -23,7 +22,7 @@ public class PartiesFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentPartiesBinding.inflate(inflater, container, false);
 
-        SectionsPagerAdapter adapter = new SectionsPagerAdapter(getChildFragmentManager(), getLifecycle());
+        PartiesPagerAdapter adapter = new PartiesPagerAdapter(getChildFragmentManager(), getLifecycle());
         binding.viewPager.setAdapter(adapter);
 
         // Link TabLayout and ViewPager2
