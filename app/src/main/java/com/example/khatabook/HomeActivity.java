@@ -13,11 +13,9 @@ import com.example.khatabook.databinding.ActivityHomeBinding;
 import com.example.khatabook.fragment.PartiesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.example.khatabook.adapter.SectionsPagerAdapter;
 import com.example.khatabook.fragment.BillFragment;
 import com.example.khatabook.fragment.ItemsFragment;
 import com.example.khatabook.fragment.MoreFragment;
-import com.example.khatabook.fragment.PurchasesFragment;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -71,18 +69,11 @@ public class HomeActivity extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
-//        tabLayout = findViewById(R.id.tabLayout);
-//        viewPager = findViewById(R.id.viewPager);
-//
-//        // Setup ViewPager with the SectionsPagerAdapter
-//        setupViewPager(viewPager);
-//        tabLayout.setupWithViewPager(viewPager);
-//    }
-//
-//    private void setupViewPager(ViewPager viewPager) {
-//        SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-//        adapter.addFragment(new CustomersFragment(), "Customers");
-//        adapter.addFragment(new SuppliersFragment(), "Suppliers");
-//        viewPager.setAdapter(adapter);
-//    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
