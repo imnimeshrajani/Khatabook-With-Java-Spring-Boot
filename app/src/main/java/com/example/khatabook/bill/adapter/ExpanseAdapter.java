@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.khatabook.R;
 
-public class ExpanseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ExpanseAdapter extends RecyclerView.Adapter<ExpanseAdapter.Viewholder> {
 
     Context context;
 
@@ -22,21 +22,21 @@ public class ExpanseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ExpanseAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_expanse, parent, false);
-        return new RecyclerView.ViewHolder(view) {
-        };
+        return new ExpanseAdapter.Viewholder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ExpanseAdapter.Viewholder holder, int position) {
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 10;
     }
+
     public class Viewholder extends RecyclerView.ViewHolder {
         private ImageView imgBill;
         private TextView name;
@@ -53,5 +53,4 @@ public class ExpanseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         }
     }
-
 }
