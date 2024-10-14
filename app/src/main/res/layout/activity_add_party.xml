@@ -78,6 +78,7 @@
             android:id="@+id/edtNumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:inputType="numberSigned"
             android:maxLength="10">
 
         </com.google.android.material.textfield.TextInputEditText>

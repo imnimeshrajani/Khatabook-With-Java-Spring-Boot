@@ -19,7 +19,7 @@ public class AddPartyActivity extends AppCompatActivity {
         binding = ActivityAddPartyBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        String partyType = getIntent().getStringExtra("PART_TYPE");
+        String partyType = getIntent().getStringExtra("PARTY_TYPE");
         if (partyType.equals("CUSTOMER")) {
             binding.rbCustomer.setSelected(true);
             binding.btnAddParty.setText(getString(R.string.add_customer));
