@@ -39,6 +39,10 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
+            android:name=".bill.Activity.AddBillTransActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name=".partyTransaction.PartyTransactionActivity"
             android:exported="false"/>
     </application>
