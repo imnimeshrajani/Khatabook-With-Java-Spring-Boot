@@ -34,7 +34,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".PartyTransactionActivity"
+            android:name=".partyTransaction.PartyTransactionActivity"
             android:exported="false" />
     </application>
 
