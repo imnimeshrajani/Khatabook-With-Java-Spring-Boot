@@ -1,4 +1,4 @@
-package com.example.khatabook.parties.adapter;
+package com.example.khatabook.items.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

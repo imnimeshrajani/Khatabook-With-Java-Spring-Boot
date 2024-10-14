@@ -10,14 +10,19 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.khatabook.R;
+import com.example.khatabook.databinding.FragmentCustomersBinding;
+import com.example.khatabook.databinding.FragmentPartiesBinding;
 
 public class CustomersFragment extends Fragment {
+
+    private FragmentCustomersBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_customers, container, false);
+        binding = FragmentCustomersBinding.inflate(inflater, container, false);
 
-        return view;
+
+        return binding.getRoot();
     }
 }
