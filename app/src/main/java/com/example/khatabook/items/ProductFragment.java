@@ -1,4 +1,4 @@
-package com.example.khatabook.fragment;
+package com.example.khatabook.items;
 
 import android.os.Bundle;
 

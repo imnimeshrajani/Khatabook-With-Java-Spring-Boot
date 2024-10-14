@@ -9,6 +9,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="gray">#888888</color>
     <color name="green">#1E8822</color>
-    <color name="red">#F44336</color>
+    <color name="red">#DE2944</color>
     <color name="light_gray">#E0E0E0</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

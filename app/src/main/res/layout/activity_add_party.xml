@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    tools:context=".AddPartyActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp"
+        android:layout_weight="1"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/countryCodeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="15">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/countryCodeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_country_code_btn"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/numberLayout"
+        app:layout_constraintBottom_toBottomOf="@id/numberLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_country_code_in" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="+91"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numberLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="1"
+        android:hint="Mobile Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/countryCodeLayout"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="10">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtWhoAreThey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/who_are_they"
+        app:layout_constraintStart_toStartOf="@id/countryCodeLayout"
+        app:layout_constraintTop_toBottomOf="@id/countryCodeLayout" />
+
+    <RadioGroup
+        android:id="@+id/rgPartType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/txtWhoAreThey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtWhoAreThey"
+        app:layout_constraintTop_toTopOf="@id/txtWhoAreThey">
+
+        <RadioButton
+            android:id="@+id/rbCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer" />
+
+        <RadioButton
+            android:id="@+id/rbSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/supplier" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddParty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/add_supplier"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
