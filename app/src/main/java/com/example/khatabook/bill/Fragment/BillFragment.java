@@ -1,4 +1,4 @@
-package com.example.khatabook.bill;
+package com.example.khatabook.bill.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,11 +13,11 @@ import com.example.khatabook.R;
 
 import com.example.khatabook.bill.adapter.BillSectionPagerAdapter;
 import com.example.khatabook.databinding.FragmentBillBinding;
-import com.example.khatabook.databinding.FragmentPartiesBinding;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class BillFragment extends Fragment {
     private FragmentBillBinding binding;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
