@@ -25,11 +25,11 @@
 
 
             <ImageView
-                android:layout_weight="5"
+                android:layout_weight="8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_back_arrow"
-                android:layout_gravity="center"
+                android:layout_gravity="center_vertical"
                 android:id="@+id/backArrow"/>
             <TextView
                 android:id="@+id/name_trans"
@@ -46,10 +46,11 @@
 
       <ScrollView
           android:layout_width="match_parent"
-          android:layout_height="match_parent">
+          android:layout_height="match_parent"
+          >
          <LinearLayout
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
+             android:layout_height="wrap_content"
              android:orientation="vertical">
 
 
@@ -142,11 +143,13 @@
                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                       android:layout_width="match_parent"
                       android:hint="  Search from your parties"
-                      android:layout_height="45dp"
+                      android:layout_height="wrap_content"
+
                       android:id="@+id/searchParty">
 
                      <com.google.android.material.textfield.TextInputEditText
                          android:layout_width="match_parent"
+                         android:focusable="false"
                          android:drawableLeft="@drawable/baseline_search_24"
                          android:layout_height="wrap_content">
                      </com.google.android.material.textfield.TextInputEditText>
@@ -395,7 +398,7 @@
                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                       android:layout_width="match_parent"
                       android:hint="Enter Amount"
-                      android:layout_height="45dp"
+                      android:layout_height="wrap_content"
                       android:id="@+id/finalAmount">
 
                      <com.google.android.material.textfield.TextInputEditText
@@ -563,9 +566,8 @@
                 android:background="@color/white"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:hint="₹456"
-                app:helperText="Received"
-                android:layout_height="45dp"
+                android:hint="Received"
+                android:layout_height="wrap_content"
                 android:id="@+id/receivedAmount">
 
                <com.google.android.material.textfield.TextInputEditText
