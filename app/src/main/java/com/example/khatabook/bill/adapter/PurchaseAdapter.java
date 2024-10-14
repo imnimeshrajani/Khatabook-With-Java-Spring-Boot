@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.khatabook.R;
 
-public class PurchaseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class PurchaseAdapter extends RecyclerView.Adapter<PurchaseAdapter.Viewholder> {
 
     Context context;
 
@@ -22,21 +22,21 @@ public class PurchaseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_purchase, parent, false);
-        return new RecyclerView.ViewHolder(view) {
-        };
+        return new Viewholder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull Viewholder holder, int position) {
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 10;
     }
+
     public class Viewholder extends RecyclerView.ViewHolder {
         private ImageView imgBill;
         private TextView name;

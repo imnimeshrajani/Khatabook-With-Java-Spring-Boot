@@ -13,9 +13,8 @@
         android:theme="@style/Theme.Khatabook"
         tools:targetApi="31">
         <activity
-            android:name=".AddPartyActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:name=".bill.Activity.AddBillTransActivity"
+            android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="true">
@@ -30,6 +29,9 @@
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PartyTransactionActivity"
             android:exported="false" />
     </application>
 

@@ -13,7 +13,7 @@ import com.example.khatabook.databinding.ActivityHomeBinding;
 import com.example.khatabook.parties.PartiesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.example.khatabook.bill.BillFragment;
+import com.example.khatabook.bill.Fragment.BillFragment;
 import com.example.khatabook.items.ItemsFragment;
 import com.example.khatabook.more.MoreFragment;
 

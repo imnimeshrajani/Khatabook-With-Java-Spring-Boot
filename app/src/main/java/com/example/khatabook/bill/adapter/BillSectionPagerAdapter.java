@@ -6,9 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.khatabook.bill.ExpensesFragment;
-import com.example.khatabook.bill.PurchasesFragment;
-import com.example.khatabook.bill.SalesFragment;
+import com.example.khatabook.bill.Fragment.ExpensesFragment;
+import com.example.khatabook.bill.Fragment.PurchasesFragment;
+import com.example.khatabook.bill.Fragment.SalesFragment;
 
 
 public class BillSectionPagerAdapter extends FragmentStateAdapter {

@@ -1,4 +1,4 @@
-package com.example.khatabook.bill;
+package com.example.khatabook.bill.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.khatabook.R;
-import com.example.khatabook.bill.adapter.BillAdapter;
 import com.example.khatabook.bill.adapter.PurchaseAdapter;
 import com.example.khatabook.databinding.FragmentPurchasesBinding;
-import com.example.khatabook.databinding.FragmentSalesBinding;
 
 public class PurchasesFragment extends Fragment {
 
