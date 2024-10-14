@@ -5,17 +5,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.khatabook.databinding.FragmentItemsBinding;
-import com.example.khatabook.parties.adapter.ItemsPagerAdapter;
+import com.example.khatabook.items.adapter.ItemsPagerAdapter;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class ItemsFragment extends Fragment {
     FragmentItemsBinding binding;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentItemsBinding.inflate(inflater, container, false);
