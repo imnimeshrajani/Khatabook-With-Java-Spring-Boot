@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Khatabook"
         tools:targetApi="31">
-
+        <activity
+            android:name=".SearchOrAddPartyActivity"
+            android:exported="false" />
         <activity
             android:name=".parties.activity.EntryDetailsActivity"
             android:exported="false" />
