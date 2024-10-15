@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.khatabook.R;
 import com.example.khatabook.databinding.ActivityExpenseDetailBinding;
 
-public class activity_expense_detail extends AppCompatActivity {
+public class ExpanseDetailsActivity extends AppCompatActivity {
 
     ActivityExpenseDetailBinding binding;
     @Override

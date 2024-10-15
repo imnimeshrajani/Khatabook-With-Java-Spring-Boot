@@ -13,14 +13,27 @@
         android:theme="@style/Theme.Khatabook"
         tools:targetApi="31">
         <activity
-            android:name=".bill.Activity.activity_expense_detail"
-            android:exported="false" />
+            android:name=".bill.Activity.ExpanseDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".bill.Activity.AddExpanseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".bill.Activity.BillDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".bill.Activity.PaymentInOutActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".bill.Activity.AddBillTransActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
         <activity
             android:name=".parties.activity.EntryDetailsActivity"
             android:exported="false" />
@@ -58,12 +71,12 @@
             android:name=".parties.activity.AddPartyActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".bill.Activity.AddBillTransActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustPan" />
+
         <activity
             android:name=".parties.activity.PartyTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parties.activity.SearchOrAddPartyActivity"
             android:exported="false" />
     </application>
 
