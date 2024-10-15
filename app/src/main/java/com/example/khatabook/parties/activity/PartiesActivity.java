@@ -20,10 +20,6 @@ import com.example.khatabook.more.MoreFragment;
 
 public class PartiesActivity extends AppCompatActivity {
 
-    private ViewPager2 viewPager;
-    private TabLayout tabLayout;
-    private BottomNavigationView bottomNavigationView;
-    private FrameLayout fragmentFrameLayout;
     private Fragment partiesFragment, billFragment, itemFragment, moreFragment;
 
     private ActivityHomeBinding binding;
@@ -34,11 +30,6 @@ public class PartiesActivity extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        fragmentFrameLayout = findViewById(R.id.fragmentFrameLayout);
-
-
         partiesFragment = new PartiesFragment();
         billFragment = new BillFragment();
         itemFragment = new ItemsFragment();
@@ -46,7 +37,7 @@ public class PartiesActivity extends AppCompatActivity {
 
         loadFragment(partiesFragment);
 
-        bottomNavigationView.setOnItemSelectedListener(item -> {
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_parties) {
                 loadFragment(partiesFragment);
                 return true;
