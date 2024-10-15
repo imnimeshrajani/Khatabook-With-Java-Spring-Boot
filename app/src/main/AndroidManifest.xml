@@ -12,7 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Khatabook"
         tools:targetApi="31">
-
+        <activity
+            android:name=".bill.Activity.activity_expense_detail"
+            android:exported="false" />
+        <activity
+            android:name=".bill.Activity.BillDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bill.Activity.PaymentInOutActivity"
+            android:exported="false" />
         <activity
             android:name=".parties.activity.EntryDetailsActivity"
             android:exported="false" />
