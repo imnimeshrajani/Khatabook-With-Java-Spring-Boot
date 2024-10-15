@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".parties.activity.EditProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Profile"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivParty"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_country_code_in"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add Photo"
+                app:layout_constraintEnd_toEndOf="@id/ivParty"
+                app:layout_constraintStart_toStartOf="@id/ivParty"
+                app:layout_constraintTop_toBottomOf="@id/ivParty" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldName"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tvEditProfile">
+
+                <ImageView
+                    android:id="@+id/iconProfile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_person_outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/iconProfile"
+                    app:layout_constraintStart_toEndOf="@id/iconProfile"
+                    app:layout_constraintTop_toTopOf="@id/iconProfile">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvPartyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintTop_toBottomOf="@id/fieldName">
+
+                <ImageView
+                    android:id="@+id/iconMobile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_phone_outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/iconMobile"
+                    app:layout_constraintStart_toEndOf="@id/iconMobile"
+                    app:layout_constraintTop_toTopOf="@id/iconMobile">
+
+                    <TextView
+                        android:id="@+id/txtMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MobileNumber"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvPartyMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldAddress"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintTop_toBottomOf="@id/fieldMobileNumber">
+
+                <ImageView
+                    android:id="@+id/iconAddress"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_location_outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/iconAddress"
+                    app:layout_constraintStart_toEndOf="@id/iconAddress"
+                    app:layout_constraintTop_toTopOf="@id/iconAddress">
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvPartyAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldChangePartyType"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintTop_toBottomOf="@id/fieldAddress">
+
+                <ImageView
+                    android:id="@+id/iconChange"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_transfer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/iconChange"
+                    app:layout_constraintStart_toEndOf="@id/iconChange"
+                    app:layout_constraintTop_toTopOf="@id/iconChange">
+
+                    <TextView
+                        android:id="@+id/tvChangePartyType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change to Supplier"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="DELETE CUSTOMER"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

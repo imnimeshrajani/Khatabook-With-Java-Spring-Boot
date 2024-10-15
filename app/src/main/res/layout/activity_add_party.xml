@@ -2,12 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="15dp"
-    tools:context=".AddPartyActivity">
+    tools:context=".parties.activity.AddPartyActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+
+            android:text="Add Party"/>
+    </androidx.appcompat.widget.Toolbar>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nameLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -19,7 +37,7 @@
         app:layout_constraintBottom_toTopOf="@+id/countryCodeLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtName"
@@ -124,5 +142,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_blue"
         android:text="@string/add_supplier"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Khatabook"
         tools:targetApi="31">
+
+        <activity
+            android:name=".parties.activity.EntryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parties.activity.EditProfileActivity"
+            android:exported="false" />
         <activity
             android:name=".items.ServicesDetails"
             android:exported="false" />
@@ -33,9 +40,8 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-
         <activity
-            android:name=".AddPartyActivity"
+            android:name=".parties.activity.AddPartyActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -43,8 +49,8 @@
             android:exported="false"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".partyTransaction.PartyTransactionActivity"
-            android:exported="false"/>
+            android:name=".parties.activity.PartyTransactionActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

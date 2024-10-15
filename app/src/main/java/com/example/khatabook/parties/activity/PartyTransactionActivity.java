@@ -1,4 +1,4 @@
-package com.example.khatabook.partyTransaction;
+package com.example.khatabook.parties.activity;
 
 import android.os.Bundle;
 

@@ -64,24 +64,76 @@
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/txtEntry">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/innerGuideline2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvEntryTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="09 Oct 24 . 04:00 PM"
-            android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/tvEntryTime"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09 Oct 24 . 04:00 PM"
+                    android:textSize="12sp"
+                    android:layout_marginStart="20dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bal. ₹200"
-            android:layout_marginStart="20dp"/>
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Bal. ₹200"
+                    android:textSize="10dp"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAmountGave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 100"
+                android:textColor="@color/red"
+                android:textSize="18dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/innerGuideline"/>
+            <TextView
+                android:id="@+id/tvAmountGot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 100"
+                android:textColor="@color/green"
+                android:textSize="18dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/innerGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/innerGuideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.Guideline

@@ -14,4 +14,6 @@
     <string name="entries">ENTRIES</string>
     <string name="you_gave">YOU GAVE</string>
     <string name="you_got">YOU GOT</string>
+    <string name="delete">DELETE</string>
+    <string name="share">SHARE</string>
 </resources>
