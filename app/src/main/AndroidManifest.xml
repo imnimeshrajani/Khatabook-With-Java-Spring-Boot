@@ -20,6 +20,12 @@
             android:name=".parties.activity.EditProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".items.AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".items.AddService"
+            android:exported="false" />
+        <activity
             android:name=".items.ServicesDetails"
             android:exported="false" />
         <activity
