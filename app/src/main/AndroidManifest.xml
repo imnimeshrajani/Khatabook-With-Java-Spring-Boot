@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Khatabook"
         tools:targetApi="31">
         <activity
+            android:name=".bill.Activity.AddExpanseActivity"
+            android:exported="false" />
+        <activity
             android:name=".items.ServicesDetails"
             android:exported="false" />
         <activity
@@ -33,7 +36,6 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-
         <activity
             android:name=".AddPartyActivity"
             android:exported="false"
@@ -44,7 +46,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".partyTransaction.PartyTransactionActivity"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>
