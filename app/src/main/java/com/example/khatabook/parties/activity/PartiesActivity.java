@@ -1,4 +1,4 @@
-package com.example.khatabook;
+package com.example.khatabook.parties.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.khatabook.R;
 import com.example.khatabook.databinding.ActivityHomeBinding;
 import com.example.khatabook.parties.PartiesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -17,7 +18,7 @@ import com.example.khatabook.bill.Fragment.BillFragment;
 import com.example.khatabook.items.ItemsFragment;
 import com.example.khatabook.more.MoreFragment;
 
-public class HomeActivity extends AppCompatActivity {
+public class PartiesActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;
     private TabLayout tabLayout;
@@ -71,6 +72,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
         finish();

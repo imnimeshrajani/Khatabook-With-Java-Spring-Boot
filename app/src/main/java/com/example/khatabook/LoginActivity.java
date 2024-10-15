@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.khatabook.parties.activity.PartiesActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText etPhoneNumber, etPassword;
@@ -37,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     // Perform login logic (this is a placeholder)
                     if (phoneNumber.equals("1234567890") && password.equals("password")) {
-                        Intent intent = new Intent(LoginActivity.this, HomeActivity.class); // Redirect to Home Screen
+                        Intent intent = new Intent(LoginActivity.this, PartiesActivity.class); // Redirect to Home Screen
                         startActivity(intent);
                         finish();
                     } else {

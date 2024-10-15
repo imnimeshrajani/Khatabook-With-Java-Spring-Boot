@@ -32,7 +32,7 @@
             android:name=".items.ProductDetails"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".parties.activity.PartiesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
